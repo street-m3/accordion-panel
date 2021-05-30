@@ -1,0 +1,764 @@
+@charset "UTF-8";
+/*
+    Theme Name:   THEME
+    Description:  WordPress ORIGINAL THEME.
+    Theme URI:    MYURI
+    Author:       Junichi Takabatake
+    Version:      1.0.0
+    License:      GNU General Public License v3 or later
+    License URI:  https://www.gnu.org/licenses/gpl-3.0.html
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+input,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* --------------------------------
+* anchor
+* -------------------------------- */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* --------------------------------
+* abbr
+* -------------------------------- */
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* --------------------------------
+* blockquote
+* -------------------------------- */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* --------------------------------
+* button
+* -------------------------------- */
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+
+/* --------------------------------
+* del
+* -------------------------------- */
+del {
+  text-decoration: line-through;
+}
+
+/* --------------------------------
+* h1 - h6
+* -------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* --------------------------------
+* hr, italic, pre
+* -------------------------------- */
+hr {
+  border: 0;
+  border-top: 1px solid #cccccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+i {
+  display: block;
+}
+
+pre {
+  width: 100%;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+
+/* --------------------------------
+* img
+* -------------------------------- */
+img {
+  border: none;
+  border-style: none;
+  height: auto;
+  max-height: 100%;
+  vertical-align: top;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+/* --------------------------------
+* input
+* -------------------------------- */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="number"],
+input[type="submit"],
+input[type="button"] {
+  max-width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="radio"]:checked + label {
+  background: #ff0000;
+}
+
+input[type="submit"] {
+  text-decoration: none;
+}
+
+/* --------------------------------
+* ins
+* -------------------------------- */
+ins {
+  background-color: #ffff99;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* --------------------------------
+* list
+* -------------------------------- */
+li,
+ol {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* --------------------------------
+* label + legend
+* -------------------------------- */
+label {
+  cursor: pointer;
+}
+
+legend {
+  color: #000000;
+}
+
+/* --------------------------------
+* mark
+* -------------------------------- */
+mark {
+  background-color: #ffff99;
+  color: #000000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* --------------------------------
+* select
+* -------------------------------- */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding: 0;
+}
+
+/* --------------------------------
+* table
+* -------------------------------- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------
+* textarea
+* -------------------------------- */
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding: 0;
+  resize: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+[hover] {
+  border: none;
+  outline: none;
+}
+
+/* --------------------------------
+* headding base
+* -------------------------------- */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: inherit;
+  font-family: inherit;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.h1-small {
+  font-size: 32px;
+}
+
+.h2-small {
+  font-size: 25.6px;
+}
+
+.h3-small {
+  font-size: 22.4px;
+}
+
+.h4-small {
+  font-size: 24px;
+}
+
+.h5-small {
+  font-size: 16px;
+}
+
+.display-01 {
+  font-size: 90px;
+}
+
+.display-02 {
+  font-size: 82.5px;
+}
+
+.display-03 {
+  font-size: 67.5px;
+}
+
+.display-04 {
+  font-size: 52.5px;
+}
+
+/* --------------------------------
+* font-awesome icon
+* -------------------------------- */
+.instagram::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.facebook::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.twitter::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.youtube::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.rss::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.linkshare::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.history::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.checkmark::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* --------------------------------
+* root
+* -------------------------------- */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 14.4px;
+  }
+}
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+/* --------------------------------
+* layout
+* -------------------------------- */
+.ly-inner {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1100px;
+}
+
+.ly-inner-sm {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 800px;
+}
+
+/* --------------------------------
+* section header block
+* -------------------------------- */
+.mod-header {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.mod-header__nav {
+  align-items: center;
+  background-color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lexend Mega", sans-serif;
+  justify-content: space-between;
+  left: 0;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  z-index: 100;
+}
+
+.mod-header__nav .mod-header__logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.mod-header__nav .mod-header__navList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mod-header__nav .mod-header__navList .mod-header__navItem {
+  margin: 0 1em;
+}
+
+.mod-header__nav .mod-header__navList .mod-header__navItem a {
+  color: #0f0f0f;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1099px) {
+  .ly-inner,
+  .ly-inner-sm {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ly-inner,
+  .ly-inner-sm {
+    padding: 0 16px;
+  }
+
+  .mod-header__nav {
+    display: block;
+    padding: 1.5rem 1rem;
+    width: 100%;
+  }
+
+  .mod-header__nav .mod-header__logo {
+    margin-bottom: 0.5em;
+  }
+
+  .mod-header__nav .mod-header__navList .mod-header__navItem {
+    margin: 0 1%;
+  }
+  .mod-header__nav .mod-header__navList .mod-header__navItem a {
+    font-size: 0.75rem;
+  }
+}
+
+/* --------------------------------
+* section accordions block
+* -------------------------------- */
+.p-accordion-item {
+  position: relative;
+  border: 1px solid #ddd;
+}
+
+.p-accordion-item + .p-accordion-item {
+  margin-top: 30px;
+}
+
+.p-accordion-header {
+  background-color: #858585;
+}
+
+.p-accordion-tab {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+
+/* .p-accordion-item .p-accordion-header .p-accordion-tab::before {
+  content: "Q";
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  margin-right: 15px;
+  margin-top: -0.2em;
+  width: 1em;
+} */
+
+.p-accordion-tabicon {
+  color: inherit;
+  display: inline-block;
+  height: 1em;
+  margin-left: 1em;
+  pointer-events: none;
+  position: relative;
+  width: 1em;
+}
+
+.p-accordion-tabicon::before,
+.p-accordion-tabicon::after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.p-accordion-tabicon::after {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-out 0s;
+}
+
+.p-accordion-header.is-open-panel .p-accordion-tabicon::after {
+  transform: rotate(180deg);
+}
+
+.p-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.p-accordion-content {
+  background-color: #f3f3f3;
+  padding: 30px 50px;
+}
+
+/* --------------------------------
+* utility class
+* -------------------------------- */
+
+.u-content-area {
+  padding: 60px 0;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-bet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.u-flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.u-flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.u-flex-none {
+  display: block !important;
+}
+
+.u-visual-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.u-under-line {
+  border-bottom: 1px solid;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-brsp {
+  display: none;
+}
+
+.u-brpc {
+  display: inline-block;
+}
